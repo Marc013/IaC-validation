@@ -1,0 +1,208 @@
+ myBicepSolution 
+❯ C:\Temp\IaC-validation\src\scripts\Run-PSRuleTest.ps1
+    ____  _____ ____        __
+   / __ \/ ___// __ \__  __/ /__
+  / /_/ /\__ \/ /_/ / / / / / _ \
+ / ____/___/ / _, _/ /_/ / /  __/
+/_/    /____/_/ |_|\__,_/_/\___/
+
+Using PSRule v2.9.0
+Using PSRule.Rules.Azure v1.30.3
+
+----------------------------
+Explore documentation: https://aka.ms/ps-rule
+Contribute and find source: https://github.com/microsoft/PSRule
+Report issues: https://github.com/microsoft/PSRule/issues
+PSRule.Rules.Azure: https://aka.ms/ps-rule-azure
+----------------------------
+
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.SoftDelete' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppConfig.GeoReplica' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Arc.Kubernetes.Defender' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Arc.Server.MaintenanceConfig' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Storage.MalwareScan' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Storage.SensitiveData' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.DefenderCloud.MalwareScan' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.DefenderCloud.SensitiveData' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.MaintenanceConfig' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Quarantine' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Retention' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.AnonymousAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Api' was excluded from run.
+
+ -> storageAccount/storageAccount.parameters.json : .json [5/5]
+
+    [PASS] Azure.Template.ParameterFile (AZR-000229)
+    [PASS] Azure.Template.ParameterScheme (AZR-000230)
+    [PASS] Azure.Template.MetadataLink (AZR-000231)
+    [PASS] Azure.Template.ParameterValue (AZR-000232)
+    [PASS] Azure.Template.ValidSecretRef (AZR-000233)
+
+ -> C:\Temp\myBicepSolution\storageAccount\storageAccount.parameters.json : Microsoft.Resources/deployments [5/5]
+
+    [PASS] Azure.Deployment.OutputSecretValue (AZR-000279)
+    [PASS] Azure.Deployment.AdminUsername (AZR-000284)
+    [PASS] Azure.Deployment.SecureValue (AZR-000316)
+    [PASS] Azure.Template.ParameterStrongType (AZR-000227)
+    [PASS] Azure.Template.ExpressionLength (AZR-000228)
+
+ -> mystorageaccountmarc013 : Microsoft.Storage/storageAccounts [7/18]
+
+    [PASS] My.Resource.MandatoryTags (My-000001)
+    [PASS] Azure.Resource.UseTags (AZR-000166)
+    [PASS] Azure.Resource.AllowedRegions (AZR-000167)
+    [FAIL] Azure.Storage.UseReplication (AZR-000195)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider using GRS for storage accounts that contain data.
+
+    | REASON:
+    | - Path sku.name: The field value 'Standard_LRS' was not included in the set.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.UseReplication/
+
+    [FAIL] Azure.Storage.SoftDelete (AZR-000197)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider enabling soft delete on storage accounts to protect blobs from
+    | accidental deletion or modification.
+
+    | REASON:
+    | - A sub-resource of type 'Microsoft.Storage/storageAccounts/blobServices' has not been specified.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.SoftDelete/
+
+    [PASS] Azure.Storage.BlobAccessType (AZR-000199)
+    [PASS] Azure.Storage.Name (AZR-000201)
+    [FAIL] Azure.Storage.ContainerSoftDelete (AZR-000289)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider enabling container soft delete on storage accounts to protect blob
+    | containers from accidental deletion or modification.
+
+    | REASON:
+    | - A sub-resource of type 'Microsoft.Storage/storageAccounts/blobServices' has not been specified.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.ContainerSoftDelete/
+
+    [FAIL] Azure.Storage.Firewall (AZR-000202)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider configuring storage firewall to restrict network access to permitted
+    | clients only. Also consider enforcing this setting using Azure Policy.
+
+    | REASON:
+    | - Path properties.networkAcls.defaultAction: The field 'properties.networkAcls.defaultAction' does not exist.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.Firewall/
+
+    [FAIL] Azure.Storage.MinTLS (AZR-000200)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider configuring the minimum supported TLS version to be 1.2. Also consider
+    | enforcing this setting using Azure Policy.
+
+    | REASON:
+    | - Path properties.minimumTlsVersion: The field 'properties.minimumTlsVersion' does not exist.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.MinTLS/
+
+    [PASS] Azure.Storage.SecureTransfer (AZR-000196)
+    [FAIL] Azure.Storage.BlobPublicAccess (AZR-000198)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider disallowing anonymous access to storage account blobs unless
+    | specifically required. Also consider enforcing this setting using Azure Policy.
+
+    | REASON:
+    | - Path properties.allowBlobPublicAccess: The field 'properties.allowBlobPublicAccess' does not exist.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.BlobPublicAccess/
+
+    [FAIL] Guardrails-000.Policy.231f0045f18f
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Enable infrastructure encryption for higher level of assurance that the data is
+    | secure. When infrastructure encryption is enabled, data in a storage account is
+    | encrypted twice.
+
+    | REASON:
+    | - Path properties.encryption.requireInfrastructureEncryption: The field 'properties.encryption.requireInfrastructureEncryption' does not exist.
+
+    [FAIL] Guardrails-000.Policy.53dcd26ab338
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | This Azure Policy creates an audit event when the 'Minimum TLS version' setting
+    | is not set to 'Version 1.2'.
+
+    | REASON:
+    | - Path properties.minimumTlsVersion: The field 'properties.minimumTlsVersion' does not exist.
+
+    [FAIL] Guardrails-000.Policy.c3fee06ded22
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | This Azure Policy denies the deployment of an Azure Storage Account when the '
+    | inimum TLS version' setting is not set to 'Version 1.2'.
+
+    | REASON:
+    | - Path properties.minimumTlsVersion: The field 'properties.minimumTlsVersion' does not exist.
+
+    [PASS] Guardrails-000.Policy.fcd05b3f0a55
+    [FAIL] Guardrails-000.Policy.0aca185d36fe
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Audit requirement of Secure transfer in your storage account. Secure transfer
+    | is an option that forces your storage account to accept requests only from
+    | secure connections (HTTPS). Use of HTTPS ensures authentication between the
+    | server and the service and protects data in transit from network layer attacks
+    | such as man-in-the-middle, eavesdropping, and
+    | -
+
+    | REASON:
+    | - Is set to 'Deny'.
+
+    [FAIL] Guardrails-000.Policy.cb84a4c6acd9
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | This policy enforce storage minimal tls version.
+
+    | REASON:
+    | - Is set to 'Deny'.
+
+
+Rules processed: 28, failed: 11, errored: 0
+Run d92d30ecb141e39ae7b667f18d308effd2b8345a completed in 00:00:08.6709205
+Assert-PSRule: C:\Temp\IaC-validation\src\scripts\Run-PSRuleTest.ps1:45
+Line |
+  45 |  Assert-PSRule @psRuleParameters
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | One or more rules reported failure.

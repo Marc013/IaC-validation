@@ -1,0 +1,63 @@
+# Synopsis: Test baseline 1
+apiVersion: github.com/microsoft/PSRule/v1
+kind: Baseline
+metadata:
+  name: TestBaseline1
+spec:
+  binding:
+    targetName:
+    - ResourceName
+    - name
+    targetType:
+    - ResourceType
+    - type
+  rule:
+    include:
+    ## Template rules
+    - Azure.Template.TemplateFile
+    - Azure.Template.TemplateSchema
+    - Azure.Template.TemplateScheme
+    - Azure.Template.ParameterMetadata
+    - Azure.Template.Resources
+    - Azure.Template.UseParameters
+    - Azure.Template.DefineParameters
+    - Azure.Template.UseVariables
+    - Azure.Template.LocationDefault
+    - Azure.Template.LocationType
+    - Azure.Template.ResourceLocation
+    - Azure.Template.UseLocationParameter
+    - Azure.Template.ParameterMinMaxValue
+    - Azure.Template.DebugDeployment
+    - Azure.Template.ParameterDataTypes
+    - Azure.Template.ParameterStrongType
+    - Azure.Template.ExpressionLength
+    - Azure.Template.ParameterFile
+    - Azure.Template.ParameterScheme
+    - Azure.Template.MetadataLink
+    - Azure.Template.ParameterValue
+    - Azure.Template.ValidSecretRef
+    - Azure.Template.UseComments
+    - Azure.Template.UseDescriptions
+    ## Deployment rules
+    - Azure.Deployment.OutputSecretValue
+    - Azure.Deployment.AdminUsername
+    - Azure.Deployment.SecureValue
+    - Azure.Deployment.OuterSecret
+    ## My Guardrails
+    - My.Resource.MandatoryTags
+    - Guardrails-000.Policy.231f0045f18f
+    - Guardrails-000.Policy.9f15257d13f6
+    - Guardrails-000.Policy.53dcd26ab338
+    - Guardrails-000.Policy.c3fee06ded22
+    - Guardrails-000.Policy.ad660e010347
+    - Guardrails-000.Policy.10d77e99a8fd
+    - Guardrails-000.Policy.3a6191b5112d
+    - Guardrails-000.Policy.e92b23e64881
+    - Guardrails-000.Policy.fde384278a9b
+    - Guardrails-000.Policy.ffe24346cf1a
+    - Guardrails-000.Policy.fcd05b3f0a55
+    - Guardrails-000.Policy.0aca185d36fe
+    - Guardrails-000.Policy.cb84a4c6acd9
+    ## TESTING
+    - Azure.Storage.MinTLS # ref: AZR-000200
+    includeLocal: true,

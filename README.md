@@ -1,2 +1,0 @@
-# IaC-validation
-PSRule testing

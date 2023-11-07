@@ -1,0 +1,57 @@
+// Example Baseline.Rule.json
+[
+  {
+    // Synopsis: This is an example baseline
+    "apiVersion": "github.com/microsoft/PSRule/v1",
+    "kind": "Baseline",
+    "metadata": {
+      "name": "My.Guardrails2",
+      "annotations": {
+        "obsolete": false
+      }
+    },
+    "spec": {
+      "binding": {},
+      "rule": {
+        "include": [
+          // Template rules 'https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Template.DebugDeployment/'
+          "Azure.Template.DebugDeployment",
+          "Azure.Template.DefineParameters",
+          "Azure.Template.ExpressionLength",
+          "Azure.Template.LocationDefault",
+          "Azure.Template.LocationTypek",
+          "Azure.Template.MetadataLink",
+          "Azure.Template.ParameterDataTypes",
+          "Azure.Template.ParameterFile",
+          "Azure.Template.ParameterMetadata",
+          "Azure.Template.ParameterMinMaxValue",
+          "Azure.Template.ParameterScheme",
+          "Azure.Template.ParameterStrongType",
+          "Azure.Template.ParameterValue",
+          "Azure.Template.ResourceLocation",
+          "Azure.Template.Resources",
+          "Azure.Template.TemplateFile",
+          "Azure.Template.TemplateSchema",
+          "Azure.Template.TemplateScheme",
+          "Azure.Template.UseComments",
+          "Azure.Template.UseDescriptions",
+          "Azure.Template.UseLocationParameter",
+          "Azure.Template.UseParameters",
+          "Azure.Template.UseVariables",
+          "Azure.Template.ValidSecretRef",
+          // Deployment rules 'https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Deployment.AdminUsername/'
+          "Azure.Deployment.AdminUsername",
+          "Azure.Deployment.Name",
+          "Azure.Deployment.OuterSecret",
+          "Azure.Deployment.OutputSecretValue",
+          "Azure.Deployment.SecureParameter",
+          "Azure.Deployment.SecureValue",
+          // My Guardrails rules
+          "My.Resource.MandatoryTags",
+          "Guardrails-000.Policy.231f0045f18f"
+        ]
+      },
+      "configuration": {}
+    }
+  }
+]

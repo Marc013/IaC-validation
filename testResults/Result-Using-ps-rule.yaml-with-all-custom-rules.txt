@@ -1,0 +1,637 @@
+ myBicepSolution 
+❯ C:\Temp\IaC-validation\src\scripts\Run-PSRuleTest.ps1
+    ____  _____ ____        __
+   / __ \/ ___// __ \__  __/ /__
+  / /_/ /\__ \/ /_/ / / / / / _ \
+ / ____/___/ / _, _/ /_/ / /  __/
+/_/    /____/_/ |_|\__,_/_/\___/
+
+Using PSRule v2.9.0
+Using PSRule.Rules.Azure v1.30.3
+
+----------------------------
+Explore documentation: https://aka.ms/ps-rule
+Contribute and find source: https://github.com/microsoft/PSRule
+Report issues: https://github.com/microsoft/PSRule/issues
+PSRule.Rules.Azure: https://aka.ms/ps-rule-azure
+----------------------------
+
+    [WARN] Rule '.\My.Resource.MandatoryTags' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Usage' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.ContainerScan' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.ImageHealth' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.GeoReplica' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.SoftDelete' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ADX.Usage' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.Version' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.PoolVersion' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.PoolScaleSet' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.NodeMinPods' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.AutoScaling' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.CNISubnetSize' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.AvailabilityZone' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.AuditLogs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.PlatformLogs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.UptimeSLA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.EphemeralOSDisk' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.HTTPEndpoint' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.APIDescriptors' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.HTTPBackend' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.EncryptValues' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.ProductSubscription' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.ProductApproval' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.SampleProducts' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.ProductDescriptors' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.ProductTerms' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.CertificateExpiry' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.AvailabilityZone' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.MinAPIVersion' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.MultiRegion' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.MultiRegionGateway' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.CORSPolicy' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.PolicyBase' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppConfig.AuditLogs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppConfig.GeoReplica' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppConfig.PurgeProtect' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.UseHTTPS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.AvailabilityZone' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.PlanInstanceCount' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.RemoteDebug' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.NETVersion' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.PHPVersion' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.AlwaysOn' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.HTTP2' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.WebProbe' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.WebProbePath' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.WebSecureFtp' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Arc.Kubernetes.Defender' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Arc.Server.MaintenanceConfig' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ASE.MigrateV3' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Automation.EncryptVariables' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Automation.WebHookExpiry' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Automation.AuditLogs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Automation.PlatformLogs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.CDN.EndpointName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.CDN.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.CDN.UseFrontDoor' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.RestrictIngress' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Cosmos.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Storage.MalwareScan' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Storage.SensitiveData' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.EventHub.Usage' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.Logs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.Probe' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.ProbeMethod' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.ProbePath' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.UseWAF' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.UseCaching' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.AccessPolicy' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.Logs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.SecretName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.KeyName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.AutoRotationPolicy' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.Firewall' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.LB.Probe' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.LB.AvailabilityZone' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.LB.StandardSKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.LogicApp.LimitHTTPTrigger' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.UseSSL' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.ServerName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.DatabaseName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.FirewallRuleName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.VNETRuleName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.AllowAzureAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.FirewallRuleCount' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.FirewallIPRange' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.FirewallRuleCount' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.AllowAzureAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.FirewallIPRange' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.ServerName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.GeoRedundantBackup' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.UseFlexible' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.AAD' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.AADOnly' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.NSG.AnyInboundSource' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.NSG.DenyAllInbound' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.NSG.LateralTraversal' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.NSG.Associated' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Policy.Descriptors' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Policy.AssignmentDescriptors' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Policy.AssignmentAssignedBy' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Policy.ExemptionDescriptors' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Policy.WaiverExpiry' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.FirewallRuleCount' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.AllowAzureAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.FirewallIPRange' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.ServerName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.GeoRedundantBackup' was excluded fromrun.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.AAD' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PublicIP.IsAttached' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PublicIP.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PublicIP.DNSLabel' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PublicIP.AvailabilityZone' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.MaxMemoryReserved' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.AvailabilityZone' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RedisEnterprise.Zones' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.FirewallRuleCount' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.FirewallIPRange' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.Version' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Resource.UseTags' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Resource.AllowedRegions' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ResourceGroup.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RSV.StorageType' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RSV.ReplicationAlert' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Search.SKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Search.QuerySLA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Search.IndexSLA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Search.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Search.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ServiceBus.Usage' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ServiceBus.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ServiceBus.AuditLogs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ServiceFabric.AAD' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SignalR.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.FirewallRuleCount' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.AllowAzureAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.FirewallIPRange' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.Auditing' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.AAD' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.ServerName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.AADOnly' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.TDE' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.DBName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.FGName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQLMI.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQLMI.AADOnly' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQLMI.AAD' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.UseReplication' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.SoftDelete' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.BlobAccessType' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.FileShareSoftDelete' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.ContainerSoftDelete' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.DefenderCloud.MalwareScan' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.DefenderCloud.SensitiveData' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RBAC.UseGroups' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RBAC.LimitOwner' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RBAC.LimitMGDelegation' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RBAC.CoAdministrator' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RBAC.UseRGDelegation' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RBAC.PIM' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.DefenderCloud.Contact' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.DefenderCloud.Provisioning' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Monitor.ServiceHealth' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.TrafficManager.Endpoints' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.TrafficManager.Protocol' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.UseManagedDisks' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.DiskCaching' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.UseHybridUseBenefit' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.AcceleratedNetworking' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.PublicKey' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.Agent' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.Updates' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.ComputerName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.DiskAttached' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.DiskSizeAlignment' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.ADE' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.DiskName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.ASMinMembers' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.ASName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.NICAttached' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.NICName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.PPGName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.ScriptExtensions' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.MigrateAMA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.SQLServerDisk' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.AMA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.MaintenanceConfig' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VMSS.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VMSS.ComputerName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VMSS.PublicKey' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VMSS.ScriptExtensions' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VMSS.MigrateAMA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VMSS.AMA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNET.UseNSGs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNET.SingleDNS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNET.LocalDNS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNET.PeerState' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNET.SubnetName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNET.BastionSubnet' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNET.FirewallSubnet' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNG.VPNLegacySKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNG.VPNActiveActive' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNG.ERLegacySKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNG.VPNAvailabilityZoneSKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNG.ERAvailabilityZoneSKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.AdminUser' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.MinSku' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Quarantine' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.ContentTrust' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Retention' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.AnonymousAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Firewall' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ADX.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ADX.DiskEncryption' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ADX.SLA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.MinNodeCount' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.StandardLB' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.NetworkPolicy' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.AzurePolicyAddOn' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.ManagedAAD' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.AuthorizedIPs' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.LocalAccounts' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.AzureRBAC' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.SecretStore' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.SecretStoreRotation' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.HttpAppRouting' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.AutoUpgrade' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.UseRBAC' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.DNSPrefix' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.ContainerInsights' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AKS.DefenderProfile' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.Protocols' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.Ciphers' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppConfig.SKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppConfig.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppConfig.DisableLocalAuth' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.MinInstance' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.MinSku' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.UseWAF' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.SSLPolicy' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.Prevention' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.WAFEnabled' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.OWASP' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.WAFRules' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGw.MigrateV2' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGwWAF.Enabled' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGwWAF.PreventionMode' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGwWAF.Exclusions' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppGwWAF.RuleGroups' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppInsights.Workspace' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppInsights.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.MinPlan' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.ARRAffinity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppService.UseHTTPS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ASG.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Automation.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Bastion.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.BV.Immutable' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.CDN.HTTP' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Cognitive.PublicAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Cognitive.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Cognitive.DisableLocalAuth' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Cognitive.PrivateEndpoints' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.Insecure' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.PublicAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.ExternalIngress' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.Storage' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.DisableAffinity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ContainerApp.APIVersion' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Cosmos.DisableMetadataWrite' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Cosmos.AccountName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Databricks.SecureConnectivity' was excluded fromrun.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.DataFactory.Version' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Containers' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Servers' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.SQL' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.AppServices' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Storage' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.SQLOnVM' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.KeyVault' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Dns' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Arm' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Cspm' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Api' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.CosmosDb' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.OssRdb' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.EventGrid.TopicPublicAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.EventGrid.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.EventGrid.DisableLocalAuth' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.EventHub.DisableLocalAuth' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.EventHub.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Firewall.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Firewall.PolicyName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Firewall.Mode' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Firewall.PolicyMode' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.State' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.WAF.Mode' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.WAF.Enabled' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.WAF.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoor.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoorWAF.Enabled' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoorWAF.PreventionMode' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoorWAF.Exclusions' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.FrontDoorWAF.RuleGroups' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Identity.UserAssignedName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.IoTHub.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.SoftDelete' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.PurgeProtect' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.KeyVault.RBAC' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.LB.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MariaDB.GeoRedundantBackup' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.UseSSL' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.MySQL.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.NSG.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.NSG.AKSRules' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.UseSSL' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PostgreSQL.AADOnly' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PrivateEndpoint.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PublicIP.StandardSKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.PublicIP.MigrateStandard' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.MinSKU' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.NonSslPort' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Redis.PublicNetworkAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RedisEnterprise.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Route.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RSV.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.RSV.Immutable' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ServiceBus.DisableLocalAuth' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SignalR.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SignalR.SLA' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQL.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.SQLMI.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.Firewall' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.MinTLS' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.SecureTransfer' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.BlobPublicAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.Standalone' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.PromoSku' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.BasicSku' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.ASAlignment' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.UniqueDns' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.ShouldNotBeStopped' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNET.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNG.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VNG.ConnectionName' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.vWAN.Name' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.WebPubSub.ManagedIdentity' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.WebPubSub.SLA' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.231f0045f18f' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.9f15257d13f6' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.53dcd26ab338' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.c3fee06ded22' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.ad660e010347' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.10d77e99a8fd' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.3a6191b5112d' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.e92b23e64881' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.fde384278a9b' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.ffe24346cf1a' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.fcd05b3f0a55' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.0aca185d36fe' was excluded from run.
+    [WARN] Rule '.\Guardrails-000.Policy.cb84a4c6acd9' was excluded from run.
+
+ -> storageAccount/storageAccount.parameters.json : .json [5/5]
+
+    [PASS] Azure.Template.ParameterFile (AZR-000229)
+    [PASS] Azure.Template.ParameterScheme (AZR-000230)
+    [PASS] Azure.Template.MetadataLink (AZR-000231)
+    [PASS] Azure.Template.ParameterValue (AZR-000232)
+    [PASS] Azure.Template.ValidSecretRef (AZR-000233)
+
+ -> C:\Temp\myBicepSolution\storageAccount\storageAccount.parameters.json : Microsoft.Resources/deployments [5/5]
+
+    [PASS] Azure.Deployment.OutputSecretValue (AZR-000279)
+    [PASS] Azure.Deployment.AdminUsername (AZR-000284)
+    [PASS] Azure.Deployment.SecureValue (AZR-000316)
+    [PASS] Azure.Template.ParameterStrongType (AZR-000227)
+    [PASS] Azure.Template.ExpressionLength (AZR-000228)
+
+    [WARN] Target object 'mystorageaccountmarc013' has not been processed because no matching rules were found.
+
+Rules processed: 10, failed: 0, errored: 0
+Run beaa0df163475353032c52d5eecf3003a37abed1 completed in 00:00:07.3187201
+
+ myBicepSolution 
+❯ C:\Temp\IaC-validation\src\scripts\Run-PSRuleTest.ps1
+    ____  _____ ____        __
+   / __ \/ ___// __ \__  __/ /__
+  / /_/ /\__ \/ /_/ / / / / / _ \
+ / ____/___/ / _, _/ /_/ / /  __/
+/_/    /____/_/ |_|\__,_/_/\___/
+
+Using PSRule v2.9.0
+Using PSRule.Rules.Azure v1.30.3
+
+----------------------------
+Explore documentation: https://aka.ms/ps-rule
+Contribute and find source: https://github.com/microsoft/PSRule
+Report issues: https://github.com/microsoft/PSRule/issues
+PSRule.Rules.Azure: https://aka.ms/ps-rule-azure
+----------------------------
+
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.SoftDelete' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.APIM.DefenderCloud' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.AppConfig.GeoReplica' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Arc.Kubernetes.Defender' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Arc.Server.MaintenanceConfig' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Storage.MalwareScan' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Storage.SensitiveData' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.DefenderCloud.MalwareScan' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Storage.DefenderCloud.SensitiveData' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.VM.MaintenanceConfig' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Quarantine' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.Retention' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.ACR.AnonymousAccess' was excluded from run.
+    [WARN] Rule 'PSRule.Rules.Azure\Azure.Defender.Api' was excluded from run.
+
+ -> storageAccount/storageAccount.parameters.json : .json [5/5]
+
+    [PASS] Azure.Template.ParameterFile (AZR-000229)
+    [PASS] Azure.Template.ParameterScheme (AZR-000230)
+    [PASS] Azure.Template.MetadataLink (AZR-000231)
+    [PASS] Azure.Template.ParameterValue (AZR-000232)
+    [PASS] Azure.Template.ValidSecretRef (AZR-000233)
+
+ -> C:\Temp\myBicepSolution\storageAccount\storageAccount.parameters.json : Microsoft.Resources/deployments [5/5]
+
+    [PASS] Azure.Deployment.OutputSecretValue (AZR-000279)
+    [PASS] Azure.Deployment.AdminUsername (AZR-000284)
+    [PASS] Azure.Deployment.SecureValue (AZR-000316)
+    [PASS] Azure.Template.ParameterStrongType (AZR-000227)
+    [PASS] Azure.Template.ExpressionLength (AZR-000228)
+
+ -> mystorageaccountmarc013 : Microsoft.Storage/storageAccounts [7/18]
+
+    [PASS] My.Resource.MandatoryTags (My-000001)
+    [PASS] Azure.Resource.UseTags (AZR-000166)
+    [PASS] Azure.Resource.AllowedRegions (AZR-000167)
+    [FAIL] Azure.Storage.UseReplication (AZR-000195)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider using GRS for storage accounts that contain data.
+
+    | REASON:
+    | - Path sku.name: The field value 'Standard_LRS' was not included in the set.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.UseReplication/
+
+    [FAIL] Azure.Storage.SoftDelete (AZR-000197)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider enabling soft delete on storage accounts to protect blobs from
+    | accidental deletion or modification.
+
+    | REASON:
+    | - A sub-resource of type 'Microsoft.Storage/storageAccounts/blobServices' has not been specified.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.SoftDelete/
+
+    [PASS] Azure.Storage.BlobAccessType (AZR-000199)
+    [PASS] Azure.Storage.Name (AZR-000201)
+    [FAIL] Azure.Storage.ContainerSoftDelete (AZR-000289)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider enabling container soft delete on storage accounts to protect blob
+    | containers from accidental deletion or modification.
+
+    | REASON:
+    | - A sub-resource of type 'Microsoft.Storage/storageAccounts/blobServices' has not been specified.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.ContainerSoftDelete/
+
+    [FAIL] Azure.Storage.Firewall (AZR-000202)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider configuring storage firewall to restrict network access to permitted
+    | clients only. Also consider enforcing this setting using Azure Policy.
+
+    | REASON:
+    | - Path properties.networkAcls.defaultAction: The field 'properties.networkAcls.defaultAction' does not exist.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.Firewall/
+
+    [FAIL] Azure.Storage.MinTLS (AZR-000200)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider configuring the minimum supported TLS version to be 1.2. Also consider
+    | enforcing this setting using Azure Policy.
+
+    | REASON:
+    | - Path properties.minimumTlsVersion: The field 'properties.minimumTlsVersion' does not exist.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.MinTLS/
+
+    [PASS] Azure.Storage.SecureTransfer (AZR-000196)
+    [FAIL] Azure.Storage.BlobPublicAccess (AZR-000198)
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Consider disallowing anonymous access to storage account blobs unless
+    | specifically required. Also consider enforcing this setting using Azure Policy.
+
+    | REASON:
+    | - Path properties.allowBlobPublicAccess: The field 'properties.allowBlobPublicAccess' does not exist.
+
+    | HELP:
+    | - https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Storage.BlobPublicAccess/
+
+    [FAIL] Guardrails-000.Policy.231f0045f18f
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Enable infrastructure encryption for higher level of assurance that the data is
+    | secure. When infrastructure encryption is enabled, data in a storage account is
+    | encrypted twice.
+
+    | REASON:
+    | - Path properties.encryption.requireInfrastructureEncryption: The field 'properties.encryption.requireInfrastructureEncryption' does not exist.
+
+    [FAIL] Guardrails-000.Policy.53dcd26ab338
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | This Azure Policy creates an audit event when the 'Minimum TLS version' setting
+    | is not set to 'Version 1.2'.
+
+    | REASON:
+    | - Path properties.minimumTlsVersion: The field 'properties.minimumTlsVersion' does not exist.
+
+    [FAIL] Guardrails-000.Policy.c3fee06ded22
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | This Azure Policy denies the deployment of an Azure Storage Account when the '
+    | inimum TLS version' setting is not set to 'Version 1.2'.
+
+    | REASON:
+    | - Path properties.minimumTlsVersion: The field 'properties.minimumTlsVersion' does not exist.
+
+    [PASS] Guardrails-000.Policy.fcd05b3f0a55
+    [FAIL] Guardrails-000.Policy.0aca185d36fe
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | Audit requirement of Secure transfer in your storage account. Secure transfer
+    | is an option that forces your storage account to accept requests only from
+    | secure connections (HTTPS). Use of HTTPS ensures authentication between the
+    | server and the service and protects data in transit from network layer attacks
+    | such as man-in-the-middle, eavesdropping, and
+    | -
+
+    | REASON:
+    | - Is set to 'Deny'.
+
+    [FAIL] Guardrails-000.Policy.cb84a4c6acd9
+    | Template: storageAccount/storageAccount.bicep:51:5
+    | Parameter: storageAccount/storageAccount.parameters.json:1:0
+
+    | RECOMMEND:
+    | This policy enforce storage minimal tls version.
+
+    | REASON:
+    | - Is set to 'Deny'.
+
+
+Rules processed: 28, failed: 11, errored: 0
+Run 3c4eb1d8b3434b66cd2c0f6628ed9da8cb23c464 completed in 00:00:02.7920172
+Assert-PSRule: C:\Temp\IaC-validation\src\scripts\Run-PSRuleTest.ps1:41
+Line |
+  41 |  Assert-PSRule @psRuleParameters
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | One or more rules reported failure.
+
+ myBicepSolution 
+❯
