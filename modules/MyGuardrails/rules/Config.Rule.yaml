@@ -54,7 +54,7 @@ spec:
     - Azure.ExpandBicep
     - Azure.ExpandBicepParam
   rule:
-    baseline: My.Guardrails1
+    baseline: My.Guardrails3
     includeLocal: true
     exclude:
     # Ignore the following rules for all resources
