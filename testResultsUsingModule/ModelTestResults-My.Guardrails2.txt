@@ -1,0 +1,54 @@
+ C:\ 
+❯ cd C:\git\Private\_PSRuleTesting\myBicepSolution
+
+ myBicepSolution  Use-pws-module-MyGuardrails  
+❯ Import-Module -Name C:\git\Private\_PSRuleTesting\IaC-validation\modules\MyGuardrails
+
+ myBicepSolution  Use-pws-module-MyGuardrails  
+❯ Get-Module -Name MyGuardrails
+
+ModuleType Version    PreRelease Name                                ExportedCommands
+---------- -------    ---------- ----                                ----------------
+Manifest   0.1.0                 MyGuardrails
+
+
+ myBicepSolution  Use-pws-module-MyGuardrails  
+❯ Get-PSRule -Module MyGuardrails
+
+RuleName                            ModuleName                 Synopsis
+--------                            ----------                 --------
+My.Resource.MandatoryTags                                      Me - should reject when missing mandatory tags
+Guardrails-000.Policy.231f0045f18f                             Enable infrastructure encryption for higher level of assurance that the data is secure. When infrastructure en…
+
+
+ myBicepSolution  Use-pws-module-MyGuardrails  
+❯ Assert-PSRule -InputPath .\storageAccount\storageAccount.parameters.json -Module MyGuardrails -Format File
+    ____  _____ ____        __
+   / __ \/ ___// __ \__  __/ /__
+  / /_/ /\__ \/ /_/ / / / / / _ \
+ / ____/___/ / _, _/ /_/ / /  __/
+/_/    /____/_/ |_|\__,_/_/\___/
+
+Using PSRule v2.9.0
+Using MyGuardrails v0.1.0
+Using PSRule.Rules.Azure v1.30.3
+
+----------------------------
+Explore documentation: https://aka.ms/ps-rule
+Contribute and find source: https://github.com/microsoft/PSRule
+Report issues: https://github.com/microsoft/PSRule/issues
+PSRule.Rules.Azure: https://aka.ms/ps-rule-azure
+----------------------------
+
+    [WARN] Could not find a matching rule. Please check that Path, Name and Tag parameters are correct.
+
+ myBicepSolution  Use-pws-module-MyGuardrails  
+❯ Get-Module -Name PSRule.Rules.Azure
+
+ModuleType Version    PreRelease Name                                ExportedCommands
+---------- -------    ---------- ----                                ----------------
+Script     1.30.3                PSRule.Rules.Azure                  {Export-AzPolicyAssignmentData, Export-AzPolicyAssignmentRuleData, Export-AzRuleData, Export-AzRuleTempl…
+
+
+ myBicepSolution  Use-pws-module-MyGuardrails  
+❯

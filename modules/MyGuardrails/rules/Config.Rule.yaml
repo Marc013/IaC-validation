@@ -1,0 +1,63 @@
+# Docs:
+# - https://azure.github.io/PSRule.Rules.Azure/setup/configuring-options/
+# - https://azure.github.io/PSRule.Rules.Azure/setup/configuring-rules/
+# - https://azure.github.io/PSRule.Rules.Azure/setup/configuring-expansion/
+
+---
+# Synopsis: Module configuration for MyGuardrails
+apiVersion: github.com/microsoft/PSRule/v1
+kind: ModuleConfig
+metadata:
+  name: MyGuardrails
+spec:
+  binding:
+    preferTargetInfo: true
+    targetName:
+    - ResourceName
+    - name
+    targetType:
+    - ResourceType
+    - type
+    field:
+      resourceId: [ 'ResourceId', 'id' ]
+      subscriptionId: [ 'subscriptionId' ]
+      resourceGroupName: [ 'resourceGroupName' ]
+  configuration:
+    AZURE_PARAMETER_FILE_EXPANSION: true
+    AZURE_PARAMETER_FILE_METADATA_LINK: true
+    AZURE_BICEP_FILE_EXPANSION: true
+    AZURE_BICEP_FILE_EXPANSION_TIMEOUT: 60
+    AZURE_BICEP_PARAMS_FILE_EXPANSION: true
+    AZURE_BICEP_MINIMUM_VERSION: '0.22.6'
+    AZURE_BICEP_CHECK_TOOL: true
+
+    # Configure minimum AKS cluster version
+    # AZURE_AKS_CLUSTER_MINIMUM_VERSION: '1.26.6'
+
+    AZURE_DEPLOYMENT_SENSITIVE_PROPERTY_NAMES:
+    - adminUsername
+    - administratorLogin
+    - administratorLoginPassword
+
+    # Configure Container Apps external ingress
+    AZURE_CONTAINERAPPS_RESTRICT_INGRESS: false
+
+    # Configure DNS is within the identity subscription
+    AZURE_VNET_DNS_WITH_IDENTITY: false
+
+  convention:
+    include:
+    - Azure.Context
+    - Azure.DeprecatedOptions
+    - Azure.ExpandTemplate
+    - Azure.BicepInstall
+    - Azure.ExpandBicep
+    - Azure.ExpandBicepParam
+  rule:
+    baseline: My.Guardrails1
+    includeLocal: true
+    exclude:
+    # Ignore the following rules for all resources
+  output:
+    culture:
+    - en
