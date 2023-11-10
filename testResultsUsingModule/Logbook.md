@@ -42,6 +42,10 @@ The command used for this test is the same as specified above.
 
 Unfortunately, the result was exactly the previous test results.
 
+> ```PowerShell
+> [WARN] Could not find a matching rule. Please check that Path, Name and Tag parameters are correct.
+> ```
+
 ## Third test attempt
 
 Nothing has changed. Module `MyGuardrails` is still available in my default PowerShell module directory with baseline `My.Guardrails3` defined.
@@ -66,7 +70,11 @@ Assert-PSRule -InputPath .\storageAccount\storageAccount.parameters.json -Module
 
 Again the same results.
 
-## Fourth (and final) test attempt
+> ```PowerShell
+> [WARN] Could not find a matching rule. Please check that Path, Name and Tag parameters are correct.
+> ```
+
+## Fourth test attempt
 
 For this test I copied module `PSRule.Rules.Azure` to `MyGuardrails2` and:
 
@@ -79,21 +87,54 @@ For this test I copied module `PSRule.Rules.Azure` to `MyGuardrails2` and:
 7. Emptied directory 'en' and placed markdown of my custom pwsh # Name of rule
 8. Emptied directory 'rules' and placed my custom rule files (.jsonc & .ps1) and config & baseline yaml files
 9. Copied module 'MyGuardrails2' to the PowerShell default module directory.
+10. Executed command:
+
+```PowerShell
+Assert-PSRule -InputPath .\storageAccount\storageAccount.parameters.json -Module MyGuardrails2 -Format File
+```
+
+Results remain the same.
+
+> ```PowerShell
+> [WARN] Could not find a matching rule. Please check that Path, Name and Tag parameters are correct.
+> ```
 
 ## Fifth attempt as I remembered pwsh module PowerShell-yaml
 
-1. Copy version directory to 0.2.0
+1. Copy version directory 0.1.0 to 0.2.0
 2. Converted JSON rules to YAML using function `ConvertTo-Yaml`
 
     ```PowerShell
-    $customRules = Get-Content -Path C:\git\Private\_PSRuleTesting\IaC-validation\modules\MyGuardrails\rules\definitions-Guardrails-000.Rule.jsonc -Raw | ConvertFrom-Json -Depth 100
+    $customRules = Get-Content -Path C:\git\Private\_PSRuleTesting\IaC-validation\modules\MyGuardrails\0.2.0\rules\definitions-Guardrails-000.Rule.jsonc -Raw | ConvertFrom-Json -Depth 100
 
-
+    $customRules | ConvertTo-Yaml -OutFile C:\git\Private\_PSRuleTesting\IaC-validation\modules\MyGuardrails2\0.2.0\rules\definitions-Guardrails-000.Rule.yaml
     ```
 
 3. Removed 'definitions-Guardrails-000.Rule.jsonc'
 4. Updated module version in manifest to '0.2.0'
-5. Updated the rules in yaml file by adding a rule separator and synopsis and adjusting the indent
+5. Updated the rules in yaml file by adding a rule separator and synopsis (with pre1fix '[YAML]' in the description) and adjusting the indent
+6. Copied version 0.2.0 to the PowerShell default module directory and executed command
+7. Deleted directory version 0.1.0
+8. Running test
+
+```PowerShell
+Get-PSRule -Module MyGuardrails2 -ListAvailable
+
+RuleName                            ModuleName  Synopsis
+--------                            ----------  --------
+My.Resource.MandatoryTags                       Resources not having the mandatory tags should be rejected.
+Guardrails-000.Policy.231f0045f18f              [YAML]Storage accounts should have infrastructure encryption
+Guardrails-000.Policy.9f15257d13f6              [YAML]Azure Stream Analytics jobs should use customer-managed keys to encrypt data
+. . .
+
+Assert-PSRule -InputPath .\storageAccount\storageAccount.parameters.json -Module MyGuardrails2 -Format File
+```
+
+Results remain the same.
+
+> ```PowerShell
+> [WARN] Could not find a matching rule. Please check that Path, Name and Tag parameters are correct.
+> ```
 
 [1]: https://github.com/Marc013/IaC-validation/tree/MyGuardrails-pwsh-module
 [2]: https://github.com/Marc013/myBicepSolution/tree/Use-pws-module-MyGuardrails
