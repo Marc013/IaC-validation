@@ -1,10 +1,10 @@
  C:\ 
 ❯ cd C:\git\Private\_PSRuleTesting\myBicepSolution
 
- myBicepSolution  main  
+ myBicepSolution  Use-pws-module-MyGuardrails  
 ❯ Import-Module -Name C:\git\Private\_PSRuleTesting\IaC-validation\modules\MyGuardrails
 
- myBicepSolution  main  
+ myBicepSolution  Use-pws-module-MyGuardrails  
 ❯ Get-Module -Name MyGuardrails
 
 ModuleType Version    PreRelease Name                                ExportedCommands
@@ -12,26 +12,11 @@ ModuleType Version    PreRelease Name                                ExportedCom
 Manifest   0.1.0                 MyGuardrails
 
 
- myBicepSolution  main  
+ myBicepSolution  Use-pws-module-MyGuardrails  
 ❯ Get-PSRule -Module MyGuardrails
-WARNING: A rule with the same name 'My.Resource.MandatoryTags' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.231f0045f18f' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.9f15257d13f6' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.53dcd26ab338' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.c3fee06ded22' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.ad660e010347' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.10d77e99a8fd' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.3a6191b5112d' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.e92b23e64881' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.fde384278a9b' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.ffe24346cf1a' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.fcd05b3f0a55' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.0aca185d36fe' already exists.
-WARNING: A rule with the same name 'Guardrails-000.Policy.cb84a4c6acd9' already exists.
 
 RuleName                            ModuleName                 Synopsis
 --------                            ----------                 --------
-My.Resource.MandatoryTags                                      Resources not having the mandatory tags should be rejected.
 My.Resource.MandatoryTags                                      Me - should reject when missing mandatory tags
 Guardrails-000.Policy.231f0045f18f                             Enable infrastructure encryption for higher level of assurance that the data is secure. When infrastructure en…
 Guardrails-000.Policy.9f15257d13f6                             Use customer-managed keys when you want to securely store any metadata and private data assets of your Stream …
@@ -46,22 +31,9 @@ Guardrails-000.Policy.ffe24346cf1a                             Deploys a specifi
 Guardrails-000.Policy.fcd05b3f0a55                             Deploy a specific min TLS version requirement and enforce SSL on Azure STorage. Enables secure server to clien…
 Guardrails-000.Policy.0aca185d36fe                             Audit requirement of Secure transfer in your storage account. Secure transfer is an option that forces your st…
 Guardrails-000.Policy.cb84a4c6acd9                             This policy enforce storage minimal tls version.
-Guardrails-000.Policy.231f0045f18f                             Enable infrastructure encryption for higher level of assurance that the data is secure. When infrastructure en…
-Guardrails-000.Policy.9f15257d13f6                             Use customer-managed keys when you want to securely store any metadata and private data assets of your Stream …
-Guardrails-000.Policy.53dcd26ab338                             This Azure Policy creates an audit event when the 'Minimum TLS version' setting is not set to 'Version 1.2'.
-Guardrails-000.Policy.c3fee06ded22                             This Azure Policy denies the deployment of an Azure Storage Account when the 'Minimum TLS version' setting is …
-Guardrails-000.Policy.ad660e010347                             Deploy a specific min TLS version requirement and enforce SSL on Azure Database for PostgreSQL server. Enables…
-Guardrails-000.Policy.10d77e99a8fd                             Setting minimal TLS version to 1.2 improves security by ensuring your Azure SQL Database can only be accessed …
-Guardrails-000.Policy.3a6191b5112d                             Will set the Minimum TLS Version for a SQL Server to 1.2 or deny creation (when older API versions are used fo…
-Guardrails-000.Policy.e92b23e64881                             Setting minimal TLS version to 1.2 improves security by ensuring your SQL Managed Instance can only be accesse…
-Guardrails-000.Policy.fde384278a9b                             Deploy a specific min TLS version requirement and enforce SSL on SQL managed instances. Enables secure server …
-Guardrails-000.Policy.ffe24346cf1a                             Deploys a specific min TLS version requirement and enforce SSL on SQL servers. Enables secure server to client…
-Guardrails-000.Policy.fcd05b3f0a55                             Deploy a specific min TLS version requirement and enforce SSL on Azure STorage. Enables secure server to clien…
-Guardrails-000.Policy.0aca185d36fe                             Audit requirement of Secure transfer in your storage account. Secure transfer is an option that forces your st…
-Guardrails-000.Policy.cb84a4c6acd9                             This policy enforce storage minimal tls version.
 
 
- myBicepSolution  main  
+ myBicepSolution  Use-pws-module-MyGuardrails  
 ❯ Assert-PSRule -InputPath .\storageAccount\storageAccount.parameters.json -Module MyGuardrails -Format File
     ____  _____ ____        __
    / __ \/ ___// __ \__  __/ /__
@@ -80,104 +52,15 @@ Report issues: https://github.com/microsoft/PSRule/issues
 PSRule.Rules.Azure: https://aka.ms/ps-rule-azure
 ----------------------------
 
-    [WARN] A rule with the same name 'My.Resource.MandatoryTags' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.231f0045f18f' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.9f15257d13f6' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.53dcd26ab338' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.c3fee06ded22' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.ad660e010347' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.10d77e99a8fd' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.3a6191b5112d' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.e92b23e64881' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.fde384278a9b' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.ffe24346cf1a' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.fcd05b3f0a55' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.0aca185d36fe' already exists.
-    [WARN] A rule with the same name 'Guardrails-000.Policy.cb84a4c6acd9' already exists.
-    [WARN] Rule 'MyGuardrails\My.Resource.MandatoryTags' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.231f0045f18f' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.9f15257d13f6' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.53dcd26ab338' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.c3fee06ded22' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.ad660e010347' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.10d77e99a8fd' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.3a6191b5112d' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.e92b23e64881' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.fde384278a9b' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.ffe24346cf1a' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.fcd05b3f0a55' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.0aca185d36fe' was excluded from run.
-    [WARN] Rule 'MyGuardrails\Guardrails-000.Policy.cb84a4c6acd9' was excluded from run.
-    [WARN] Target object 'storageAccount.parameters.json' has not been processed because no matching rules were found.
-    [WARN] Target object 'C:\git\Private\_PSRuleTesting\myBicepSolution\storageAccount\storageAccount.parameters.json' has not been processed because no matching rules were found.
+    [WARN] Could not find a matching rule. Please check that Path, Name and Tag parameters are correct.
 
- -> mystorageaccountmarc013 : Microsoft.Storage/storageAccounts [2/7]
+ myBicepSolution  Use-pws-module-MyGuardrails  
+❯ Get-Module -Name PSRule.Rules.Azure
 
-    [PASS] My.Resource.MandatoryTags (My-000001)
-    [FAIL] Guardrails-000.Policy.231f0045f18f
-    | Template: storageAccount/storageAccount.bicep:51:5
-    | Parameter: storageAccount/storageAccount.parameters.json:1:0
-
-    | RECOMMEND:
-    | Enable infrastructure encryption for higher level of assurance that the data is
-    | secure. When infrastructure encryption is enabled, data in a storage account is
-    | encrypted twice.
-
-    | REASON:
-    | - Path properties.encryption.requireInfrastructureEncryption: The field 'properties.encryption.requireInfrastructureEncryption' does not exist.
-
-    [FAIL] Guardrails-000.Policy.53dcd26ab338
-    | Template: storageAccount/storageAccount.bicep:51:5
-    | Parameter: storageAccount/storageAccount.parameters.json:1:0
-
-    | RECOMMEND:
-    | This Azure Policy creates an audit event when the 'Minimum TLS version' setting
-    | is not set to 'Version 1.2'.
-
-    | REASON:
-    | - Path properties.minimumTlsVersion: The field 'properties.minimumTlsVersion' does not exist.
-
-    [FAIL] Guardrails-000.Policy.c3fee06ded22
-    | Template: storageAccount/storageAccount.bicep:51:5
-    | Parameter: storageAccount/storageAccount.parameters.json:1:0
-
-    | RECOMMEND:
-    | This Azure Policy denies the deployment of an Azure Storage Account when the '
-    | inimum TLS version' setting is not set to 'Version 1.2'.
-
-    | REASON:
-    | - Path properties.minimumTlsVersion: The field 'properties.minimumTlsVersion' does not exist.
-
-    [PASS] Guardrails-000.Policy.fcd05b3f0a55
-    [FAIL] Guardrails-000.Policy.0aca185d36fe
-    | Template: storageAccount/storageAccount.bicep:51:5
-    | Parameter: storageAccount/storageAccount.parameters.json:1:0
-
-    | RECOMMEND:
-    | Audit requirement of Secure transfer in your storage account. Secure transfer
-    | is an option that forces your storage account to accept requests only from
-    | secure connections (HTTPS). Use of HTTPS ensures authentication between the
-    | server and the service and protects data in transit from network layer attacks
-    | such as man-in-the-middle, eavesdropping, and
-    | -
-
-    | REASON:
-    | - Is set to 'Deny'.
-
-    [FAIL] Guardrails-000.Policy.cb84a4c6acd9
-    | Template: storageAccount/storageAccount.bicep:51:5
-    | Parameter: storageAccount/storageAccount.parameters.json:1:0
-
-    | RECOMMEND:
-    | This policy enforce storage minimal tls version.
-
-    | REASON:
-    | - Is set to 'Deny'.
+ModuleType Version    PreRelease Name                                ExportedCommands
+---------- -------    ---------- ----                                ----------------
+Script     1.30.3                PSRule.Rules.Azure                  {Export-AzPolicyAssignmentData, Export-AzPolicyAssignmentRuleData, Export-AzRuleData, Export-AzRuleTempl…
 
 
-Rules processed: 7, failed: 5, errored: 0
-Run 0312dd3c80aba81fb48c16f56c5fb57754800e0f completed in 00:00:05.9920215
-Assert-PSRule: One or more rules reported failure.
-
-  myBicepSolution  main  
+ myBicepSolution  Use-pws-module-MyGuardrails  
 ❯
