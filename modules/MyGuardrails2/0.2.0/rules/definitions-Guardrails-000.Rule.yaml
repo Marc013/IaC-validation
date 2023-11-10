@@ -1,4 +1,4 @@
-# Synopsis: Storage accounts should have infrastructure encryption
+# Synopsis: [YAML]Storage accounts should have infrastructure encryption
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -20,7 +20,7 @@ spec:
     equals: "true"
 
 ---
-# Synopsis: Azure Stream Analytics jobs should use customer-managed keys to encrypt data
+# Synopsis: [YAML]Azure Stream Analytics jobs should use customer-managed keys to encrypt data
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -42,7 +42,7 @@ spec:
     notEquals: SystemAccount
 
 ---
-# Synopsis: Storage Account - TLS Setting AUDIT
+# Synopsis: [YAML]Storage Account - TLS Setting AUDIT
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -64,7 +64,7 @@ spec:
     equals: TLS1_2
 
 ---
-# Synopsis: Storage Account - TLS Setting DENY
+# Synopsis: [YAML]Storage Account - TLS Setting DENY
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -86,7 +86,7 @@ spec:
     equals: TLS1_2
 
 ---
-# Synopsis: Azure Database for PostgreSQL server deploy a specific min TLS version requirement and enforce SSL
+# Synopsis: [YAML]Azure Database for PostgreSQL server deploy a specific min TLS version requirement and enforce SSL
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -125,7 +125,7 @@ spec:
           equals: current
 
 ---
-# Synopsis: Azure SQL Database should have the minimal TLS version set to the highest version
+# Synopsis: [YAML]Azure SQL Database should have the minimal TLS version set to the highest version
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -153,7 +153,7 @@ spec:
     equals: false
 
 ---
-# Synopsis: Enforce 1.2 as Minimum TLS Version for SQL Server
+# Synopsis: [YAML]Enforce 1.2 as Minimum TLS Version for SQL Server
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -181,7 +181,7 @@ spec:
     equals: false
 
 ---
-# Synopsis: SQL Managed Instance should have the minimal TLS version set to the highest version
+# Synopsis: [YAML]SQL Managed Instance should have the minimal TLS version set to the highest version
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -209,7 +209,7 @@ spec:
     equals: false
 
 ---
-# Synopsis: SQL managed instances deploy a specific min TLS version requirement.
+# Synopsis: [YAML]SQL managed instances deploy a specific min TLS version requirement.
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -243,7 +243,7 @@ spec:
           equals: current
 
 ---
-# Synopsis: SQL servers deploys a specific min TLS version requirement.
+# Synopsis: [YAML]SQL servers deploys a specific min TLS version requirement.
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -277,7 +277,7 @@ spec:
           equals: current
 
 ---
-# Synopsis: Azure Storage deploy a specific min TLS version requirement and enforce SSL/HTTPS
+# Synopsis: [YAML]Azure Storage deploy a specific min TLS version requirement and enforce SSL/HTTPS
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -318,7 +318,7 @@ spec:
           equals: current
 
 ---
-# Synopsis: Storage Account set to minimum TLS and Secure transfer should be enabled
+# Synopsis: [YAML]Storage Account set to minimum TLS and Secure transfer should be enabled
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
@@ -353,7 +353,7 @@ spec:
     equals: false
 
 ---
-# Synopsis: Storage accounts should be have minimal TLS version 1.2
+# Synopsis: [YAML]Storage accounts should be have minimal TLS version 1.2
 apiVersion: github.com/microsoft/PSRule/v1
 kind: Rule
 metadata:
